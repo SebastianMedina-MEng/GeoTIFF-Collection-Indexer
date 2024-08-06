@@ -6,10 +6,10 @@ from shapely.geometry import Polygon
 import glob
 
 ## global Variables
-directory_path = 'C:/Indexing_test'
+directory_path = r'path-to-folder-containing-tiles'      ## input from user
 dir_list = list()
-EPSG_CODE = 'epsg:25832' ##25833 for Sachsen
-output_filename = "bundesland_dgm1_index.gpkg"
+EPSG_CODE = 'epsg:25832'                                 ## output CRS 
+output_filename = "indexed-dataset.gpkg"                 ## output Filename   
 
 ## set working directory
 os.chdir(directory_path)
